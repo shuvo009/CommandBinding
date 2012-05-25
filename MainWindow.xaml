@@ -1,0 +1,13 @@
+﻿<Window
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	xmlns:local="clr-namespace:CommandBinding"
+	x:Class="CommandBinding.MainWindow"
+	x:Name="Window"
+	Title="MainWindow"
+	Width="640" Height="480">
+
+	<Grid x:Name="LayoutRoot">
+		<local:UserControl1 Height="97" Margin="218,17,206,0" VerticalAlignment="Top" Command="{Binding TestCommand, ElementName=Window, Mode=OneWay}" CommandParameter="Done"/>
+	</Grid>
+</Window>
